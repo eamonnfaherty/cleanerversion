@@ -92,7 +92,8 @@ relationship part, rather than the semantical correctness of the entries' fields
     from datetime import datetime
     from django.db.models.fields import CharField
     from django.utils.timezone import utc
-    from versions.models import Versionable, VersionedManyToManyField, VersionedForeignKey
+    from versions.models import Versionable
+    from versions.fields import VersionedManyToManyField, VersionedForeignKey
 
     class Discipline(Versionable):
         """A sports discipline"""
